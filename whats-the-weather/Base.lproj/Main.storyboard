@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="whats_the_weather" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,82 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pawel-nolbert-284892.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CTL-il-WGy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Whats the weather?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xix-cA-bfF">
+                                <rect key="frame" x="10" y="12.5" width="355" height="36.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your city:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXY-W3-maz">
+                                <rect key="frame" x="86" y="71" width="203" height="22.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Where in the world are you?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uqV-VL-wPm">
+                                <rect key="frame" x="16" y="132" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7d-FA-40C">
+                                <rect key="frame" x="86" y="214" width="203" height="35"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="1" green="0.95197102827034774" blue="0.1591269469891976" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Om-2H-fOD">
+                                <rect key="frame" x="42" y="405" width="291" height="116"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="116" id="KIF-qN-FCn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uqV-VL-wPm" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="041-Ef-zcs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qXY-W3-maz" secondAttribute="trailing" constant="70" id="4U2-mL-TTv"/>
+                            <constraint firstItem="C7d-FA-40C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="70" id="Cb9-IQ-Bqc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7Om-2H-fOD" secondAttribute="trailing" constant="26" id="EmT-8o-V6t"/>
+                            <constraint firstItem="uqV-VL-wPm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="HAS-pg-udJ"/>
+                            <constraint firstItem="C7d-FA-40C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HoE-hX-Hgf"/>
+                            <constraint firstItem="CTL-il-WGy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Nyu-EZ-oEA"/>
+                            <constraint firstItem="CTL-il-WGy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OcE-tc-uxJ"/>
+                            <constraint firstItem="CTL-il-WGy" firstAttribute="top" secondItem="Xix-cA-bfF" secondAttribute="bottom" constant="-49" id="VjM-h6-sAk"/>
+                            <constraint firstItem="uqV-VL-wPm" firstAttribute="top" secondItem="qXY-W3-maz" secondAttribute="bottom" constant="38.5" id="YwB-1D-WdY"/>
+                            <constraint firstItem="Xix-cA-bfF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="Zbb-ah-mVv"/>
+                            <constraint firstAttribute="trailing" secondItem="Xix-cA-bfF" secondAttribute="trailing" constant="10" id="aXf-Li-XRb"/>
+                            <constraint firstItem="C7d-FA-40C" firstAttribute="top" secondItem="uqV-VL-wPm" secondAttribute="bottom" constant="52" id="aZw-OP-0e9"/>
+                            <constraint firstItem="7Om-2H-fOD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="26" id="cf7-RS-4iD"/>
+                            <constraint firstItem="Xix-cA-bfF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g1U-Cd-xsm"/>
+                            <constraint firstAttribute="trailing" secondItem="CTL-il-WGy" secondAttribute="trailing" id="gDx-8y-Cjy"/>
+                            <constraint firstItem="qXY-W3-maz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gp5-mq-6zz"/>
+                            <constraint firstItem="uqV-VL-wPm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h0Y-Nn-0HV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="C7d-FA-40C" secondAttribute="trailing" constant="70" id="jjX-BM-Fbj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CTL-il-WGy" secondAttribute="bottom" id="l3x-5G-6IU"/>
+                            <constraint firstItem="qXY-W3-maz" firstAttribute="top" secondItem="Xix-cA-bfF" secondAttribute="bottom" constant="22" id="l7B-uG-SFy"/>
+                            <constraint firstItem="CTL-il-WGy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lld-Q8-psY"/>
+                            <constraint firstItem="7Om-2H-fOD" firstAttribute="top" secondItem="C7d-FA-40C" secondAttribute="bottom" constant="156" id="rrt-TZ-KQl"/>
+                            <constraint firstItem="CTL-il-WGy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tqm-Tf-lUy"/>
+                            <constraint firstItem="qXY-W3-maz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="70" id="wI0-bh-bLd"/>
+                            <constraint firstItem="qXY-W3-maz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y5B-vZ-gGU"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pawel-nolbert-284892.jpg" width="2400" height="3600"/>
+    </resources>
 </document>

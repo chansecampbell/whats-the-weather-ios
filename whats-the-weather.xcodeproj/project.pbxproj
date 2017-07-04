@@ -14,6 +14,7 @@
 		80A5ACEB1F0BA61500265F03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A5ACE91F0BA61500265F03 /* LaunchScreen.storyboard */; };
 		80A5ACF61F0BA61500265F03 /* whats_the_weatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A5ACF51F0BA61500265F03 /* whats_the_weatherTests.swift */; };
 		80A5AD011F0BA61500265F03 /* whats_the_weatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A5AD001F0BA61500265F03 /* whats_the_weatherUITests.swift */; };
+		80A5AD0F1F0BA69900265F03 /* pawel-nolbert-284892.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A5AD0E1F0BA69900265F03 /* pawel-nolbert-284892.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		80A5ACFC1F0BA61500265F03 /* whats-the-weatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "whats-the-weatherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80A5AD001F0BA61500265F03 /* whats_the_weatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whats_the_weatherUITests.swift; sourceTree = "<group>"; };
 		80A5AD021F0BA61500265F03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80A5AD0E1F0BA69900265F03 /* pawel-nolbert-284892.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pawel-nolbert-284892.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		80A5ACDF1F0BA61500265F03 /* whats-the-weather */ = {
 			isa = PBXGroup;
 			children = (
+				80A5AD0E1F0BA69900265F03 /* pawel-nolbert-284892.jpg */,
 				80A5ACE01F0BA61500265F03 /* AppDelegate.swift */,
 				80A5ACE21F0BA61500265F03 /* ViewController.swift */,
 				80A5ACE41F0BA61500265F03 /* Main.storyboard */,
@@ -236,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80A5ACEB1F0BA61500265F03 /* LaunchScreen.storyboard in Resources */,
+				80A5AD0F1F0BA69900265F03 /* pawel-nolbert-284892.jpg in Resources */,
 				80A5ACE81F0BA61500265F03 /* Assets.xcassets in Resources */,
 				80A5ACE61F0BA61500265F03 /* Main.storyboard in Resources */,
 			);
