@@ -32,11 +32,16 @@ class ViewController: UIViewController {
                     if let unwrappedData = data {
                         let dataString = NSString(data: unwrappedData, encoding: String.Encoding.utf8.rawValue)
                         
-                        print(dataString)
+                        if (dataString?.contains("phrase"))! {
+                            DispatchQueue.main.sync(execute: {
+                                self.weatherLabel.text = "Forecast found"
+                            })
+                        } else {
+                            DispatchQueue.main.sync(execute: {
+                                self.weatherLabel.text = "Forecast not found"
+                            })
+                        }
                         
-                        DispatchQueue.main.sync(execute: {
-                            // UI can be updated here
-                        })
                     }
                 }
             }
