@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "whats-the-weather/ViewController.swift"
-            timestampString = "520860248.739499"
+            timestampString = "520867260.392294"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "buildUrl()"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "whats-the-weather/ViewController.swift"
-            timestampString = "520859649.260495"
+            timestampString = "520861931.895358"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
             landmarkName = "submitButton(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,45 +42,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "whats-the-weather/ViewController.swift"
-            timestampString = "520860227.797763"
+            timestampString = "520866992.990118"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "submitButton(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "whats_the_weather.ViewController.(submitButton (Any) -&gt; ()).(closure #1)"
-                  moduleName = "whats-the-weather"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chansecampbell/Documents/development/swift/whats-the-weather/whats-the-weather/ViewController.swift"
-                  timestampString = "520860248.842895"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "433">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "whats_the_weather.ViewController.(submitButton (Any) -&gt; ()).(closure #1)"
-                  moduleName = "whats-the-weather"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chansecampbell/Documents/development/swift/whats-the-weather/whats-the-weather/ViewController.swift"
-                  timestampString = "520860248.844439"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "1249">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

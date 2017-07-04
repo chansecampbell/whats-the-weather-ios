@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         buildUrl()
 
         if let website = URL(string: url) {
-            print(website)
+
             let request = NSMutableURLRequest(url: website)
             
             let task = URLSession.shared.dataTask(with: request as URLRequest) {
@@ -30,18 +30,25 @@ class ViewController: UIViewController {
                     
                 } else {
                     if let unwrappedData = data {
+                        
                         let dataString = NSString(data: unwrappedData, encoding: String.Encoding.utf8.rawValue)
                         
-                        if (dataString?.contains("phrase"))! {
-                            DispatchQueue.main.sync(execute: {
-                                self.weatherLabel.text = "Forecast found"
-                            })
-                        } else {
-                            DispatchQueue.main.sync(execute: {
-                                self.weatherLabel.text = "Forecast not found"
-                            })
+                        if let returnedHTML = dataString?.contains("<span class=\"phrase\">") {
+                            if returnedHTML == true {
+                                if let forecast = dataString?.components(separatedBy: "<span class=\"phrase\">") {
+                                    
+                                    let finalForecast = forecast[1].components(separatedBy: "</span>")
+                                    
+                                    DispatchQueue.main.sync(execute: {
+                                        self.weatherLabel.text = finalForecast[0]
+                                    })
+                                }
+                            } else {
+                                DispatchQueue.main.sync(execute: {
+                                    self.weatherLabel.text = "Forecast not found"
+                                })
+                            }
                         }
-                        
                     }
                 }
             }
