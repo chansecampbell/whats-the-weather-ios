@@ -49,6 +49,9 @@
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" red="1" green="0.95197102827034774" blue="0.1591269469891976" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="submitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kvw-PG-bf1"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Om-2H-fOD">
                                 <rect key="frame" x="42" y="405" width="291" height="116"/>
@@ -90,6 +93,10 @@
                             <constraint firstItem="qXY-W3-maz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y5B-vZ-gGU"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="uqV-VL-wPm" id="008-Yi-cjC"/>
+                        <outlet property="weatherLabel" destination="7Om-2H-fOD" id="c2b-rI-y8I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
