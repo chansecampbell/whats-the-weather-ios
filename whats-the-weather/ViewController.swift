@@ -12,15 +12,46 @@ class ViewController: UIViewController {
 
     @IBOutlet var textField: UITextField!
     @IBOutlet var weatherLabel: UILabel!
+    var url: String = ""
     
     @IBAction func submitButton(_ sender: Any) {
+        
         buildUrl()
+
+        if let website = URL(string: url) {
+            print(website)
+            let request = NSMutableURLRequest(url: website)
+            
+            let task = URLSession.shared.dataTask(with: request as URLRequest) {
+                data, response, error in
+                
+                if error != nil {
+                    print(error)
+                    
+                } else {
+                    if let unwrappedData = data {
+                        let dataString = NSString(data: unwrappedData, encoding: String.Encoding.utf8.rawValue)
+                        
+                        print(dataString)
+                        
+                        DispatchQueue.main.sync(execute: {
+                            // UI can be updated here
+                        })
+                    }
+                }
+            }
+            
+            task.resume()
+            
+        } else {
+            print("Invalid website URL")
+        }
     }
     
     func buildUrl() {
         let userUrl = textField.text
-        let url = userUrl?.replacingOccurrences(of: " ", with: "-")
-        print("User submitted " + url!)
+        url = (userUrl?.replacingOccurrences(of: " ", with: "-"))!
+        url = "http://www.weather-forecast.com/locations/" + url + "/forecasts/latest"
     }
     
     override func viewDidLoad() {
